@@ -3,12 +3,21 @@
 	position: sticky;
 	width: 100%;
 	z-index: 50;
+	&__container{
+		// max-width: 1530px;  ????
+		// padding: 0px 15px;
+	}
 	&__menu {
 		display: flex;
 		justify-content: space-evenly;
 	}
 
 	&__logo {
+		@media (max-width:$mobile){
+			position: fixed;
+		z-index: 2;	
+		top: 30px;  
+		}
 	}
 
 	&__contacts {
@@ -16,24 +25,51 @@
 	}
 }
 .menu {
-
+	height: 104px;
+	padding: 10px 0;
+	align-items: center;
 	&__icon {
 	}
-
-	&__body {
+	&__link {
+		font-weight: 500;
+		color: #2E363E;
+		transition: color 0.3s ease 0s;
+		@media (min-width: $containerWidth+px) { // ????????????????????????????????????????
+			&:hover{
+				color:#5D6AFB ;
+			}
+		}
 	}
+		@media (max-width:$mobile){
+			&__body {
+				position: fixed;
+				width: 100%;
+			 	height: 100%; 
+			 	top: 0;
+			 	left: 0;
+			 	background-color: #fff;
+				 padding: 130px 0px 0px 0px;
+			}
+			&__list{
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				li{
+					padding: 0px 0px 35px 0px;
+				}
+			}
+			&__link{
+				color:#5D6AFB ;
+				font-size: 24px;
+			}
+		}
 
 	&__list {
 		display: flex;
 	}
 
 	&__item {
-		padding: 42px 20px;
-	}
-
-	&__link {
-		font-weight: 500;
-		color: #2E363E;
+		padding: 0px 20px;
 	}
 }
 .icon-menu {display: none;
@@ -84,7 +120,7 @@
 }
 .contacts {
 	&__column {
-		padding: 36px 7.5px;
+		padding: 0px 7.5px;
 	}
 }
 .item {
