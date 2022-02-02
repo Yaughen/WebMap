@@ -7,22 +7,69 @@
 <body>
 	<div class="wrapper">
 		@@include('html/_header.htm',{})
-		<main class="page">
-			<div class="welcome">
-				<div class="welcome__container">
-					<div class="welcome__img">
-						<img src="@img/computer.png" alt="computer__img">
+		<section class="welcome">
+			<div class="welcome__container">
+				<div class="welcome__img">
+					<img src="@img/computer.png" alt="computer__img">
+				</div>
+				<div class="welcome__content">
+					<h1 class="welcome__title">Создание сайтов с <br> большой буквы</h1>
+					<div class="welcome__text text">Наша команда поможет вам создать <br> оригинальный лендинг сайт,
+						в
+						кротчайшие <br> сроки</div>
+					<a href="" class="welcome__btn">Оформить заказ</a>
+				</div>
+			</div>
+		</section>
+		<section class="benefits">
+			<div class="benefits__container">
+				<div class="benefits__title">
+					Что вы получите заказывая сайты у нас?
+				</div>
+				<div class="benefits__content">
+					<div class="benefits__specifications">
+						<div class="specifications__column">
+							<div class="specifications-item item-specifications">
+								<div class="specifications-item__img">
+									<img src="@img/orig.svg" alt="orig">
+								</div>
+								<div class="specifications-item__title">Оригинальность</div>
+								<div class="specifications-item__text">Наши работы отличаються своей оригинальностью
+									на нынешнем рынке веб дизайна,таких работ вы больше не увидите в интернете</div>
+							</div>
+							<div class="specifications-item item-specifications">
+								<div class="specifications-item__img"><img src="@img/cup.svg" alt="cup"></div>
+								<div class="specifications-item__title">Удобство</div>
+								<div class="specifications-item__text">Мы подготовили все что-бы вы могли без
+									проблем оформить заказ сайта </div>
+							</div>
+							<div class="specifications-item item-specifications">
+								<div class="specifications-item__img"><img src="@img/rocket.svg" alt="rocket"></div>
+								<div class="specifications-item__title">Скорость</div>
+								<div class="specifications-item__text">Мы выполняем заказы в кротчайшие сроки ,
+									обговореные с заказчиком</div>
+							</div>
+						</div>
 					</div>
-					<div class="welcome__content">
-						<h1 class="welcome__title">Создание сайтов с <br> большой буквы</h1>
-						<div class="welcome__text text">Наша команда поможет вам создать <br> оригинальный лендинг сайт,
-							в
-							кротчайшие <br> сроки</div>
-						<a href="" class="welcome__btn">Оформить заказ</a>
+					<div class="benefits__statistics">
+						<div class="statistics__column">
+							<div class="statistics-item">
+								<div class="statistics-item__result">1</div>
+								<div class="statistics-item__description">клиентов с 2021 года</div>
+							</div>
+							<div class="statistics-item item-statistics">
+								<div class="statistics-item__result">95%</div>
+								<div class="statistics-item__description">положительных отзывов</div>
+							</div>
+							<div class="statistics-item item-statistics">
+								<div class="statistics-item__result">24/7</div>
+								<div class="statistics-item__description">поддержка</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
-		</main>
+		</section>
 		@@include('html/_footer.htm',{})
 	</div>
 	@@include('html/_js.htm',{})
