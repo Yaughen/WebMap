@@ -7,7 +7,7 @@
 // Подключаем слайдер Swiper из node_modules
 // При необходимости подключаем дополнительные модули слайдера, указывая их в {} через запятую
 // Пример: { Navigation, Autoplay }
-import Swiper, { Navigation } from 'swiper';
+import Swiper, { Navigation, Autoplay } from 'swiper';
 /*
 Основниые модули слайдера:
 Navigation, Pagination, Autoplay, 
@@ -26,7 +26,7 @@ import "../../scss/libs/swiper.scss";
 // Инициализация слайдеров
 function initSliders() {
 	// Перечень слайдеров
-	// Проверяем, есть ли слайдер на стронице
+	// Проверяем, есть ли слайдер на странице
 	if (document.querySelector('.portfolio-slider__slider')) { // Указываем скласс нужного слайдера
 		// Создаем слайдер
 		new Swiper('.portfolio-slider__slider', { // Указываем скласс нужного слайдера
@@ -47,14 +47,14 @@ function initSliders() {
 			//preloadImages: false,
 			//lazy: true,
 
-			/*
+
 			// Эффекты
 			effect: 'fade',
 			autoplay: {
 				delay: 3000,
 				disableOnInteraction: false,
 			},
-			*/
+
 
 			// Пагинация
 			/*
