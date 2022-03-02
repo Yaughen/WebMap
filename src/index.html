@@ -70,32 +70,53 @@
 				</div>
 			</div>
 		</section>
-		<!-- <section class="portfolio">
+		<section class="portfolio">
 			<div class="portfolio__container">
 				<div class="portfolio__text">
 					<div class="portfolio__title">Смотрите примеры выполненных работ
 					</div>
 					<div class="portfolio__description">Фото пректов с сайта fl.ru</div>
-				</div> -->
-		<div class="portfolio-slider__slider swiper">
-			<div class="portfolio-slider__wrapper swiper-wrapper">
-				<div class="portfolio-slider__slide swiper-slide">
-					<div class="portfolio-slider__image">
-						<img src="@img/slide.png" alt="">
-					</div>
 				</div>
-				<div class="portfolio-slider__slide swiper-slide">
-					<div class="portfolio-slider__image">
-						<img src="@img/computer.png" alt="">
+				<div class="portfolio-slider__content">
+					<div class="portfolio-slider__background">
+						<img src="@img/Mac.png" alt="Mac">
+					</div>
+					<div class="portfolio-slider__slider swiper">
+						<div class="portfolio-slider__wrapper swiper-wrapper">
+							<div class="portfolio-slider__slide swiper-slide">
+								<div class="portfolio-slider__img swiper-zoom-container">
+									<img src="@img/slider-img-1.jpg" alt="slide">
+								</div>
+							</div>
+							<div class="portfolio-slider__slide swiper-slide">
+								<div class="portfolio-slider__img swiper-zoom-container">
+									<img src="@img/slider-img-2.jpg" alt="slide">
+								</div>
+							</div>
+							<div class="portfolio-slider__slide swiper-slide">
+								<div class="portfolio-slider__img swiper-zoom-container">
+									<img src="@img/slider-img-3.jpg" alt="slide">
+								</div>
+							</div>
+						</div>
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
 					</div>
 				</div>
 			</div>
-			<div class="swiper-button-prev"></div>
-			<div class="swiper-button-next"></div>
-		</div>
-		<!-- </div> -->
 		</section>
-		@@include('html/_footer.htm',{})
+		<section class="feedback">
+			<div class="feedback__container">
+				<div class="feedback__title">Оставьте нам контакты и мы
+					свяжемся с вами</div>
+				<div class="feedback__content">
+					<div class="feedback__form"></div>
+					<div class="feedback__benefits"></div>
+				</div>
+			</div>
+	</div>
+	</section>
+	@@include('html/_footer.htm',{})
 	</div>
 	@@include('html/_js.htm',{})
 </body>
